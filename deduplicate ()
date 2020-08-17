@@ -1,0 +1,5 @@
+from collections import OrderedDict
+def remove_duplicate(str):
+  return "".join(OrderedDict.fromkeys(str))
+print(remove_duplicate("python exercises practice solution"))
+

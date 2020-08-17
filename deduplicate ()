@@ -1,5 +1,7 @@
-from collections import OrderedDict
-def remove_duplicate(str):
-  return "".join(OrderedDict.fromkeys(str))
-print(remove_duplicate("python exercises practice solution"))
-
+def deduplicate(s):
+    words=s.split("")
+    distwords=[]
+    for i in words:
+        if i not in distwords:
+            distwords.append(i)
+            return distwords
